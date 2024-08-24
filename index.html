@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Marveey" />
+    <meta name="description" content="this is a project" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="Form-card">
+      <h1>Create an account</h1>
+    
+<div class="form-container">
+
+
+<form action="/submit" method="post">
+    <fieldset>
+        <legend>Fill in the input fields</legend>
+
+<label for="firstname"> Firstname
+<input type="text" name="firstname" id="firstname" placeholder="First name" required title="Please enter atleast one uppercase letter" pattern=".*[A-Z].*">
+</label>
+
+<label for="lastname"> Lastname
+<input type="text" name="lastname" id="lastname" placeholder="Lastname" required title="Please enter atleast one uppercase letter" pattern=".*[A-Z].*" pattern=".*[A-Z].*">
+</label>
+
+<label for="username"> Username
+<input type="text" name="username" id="username" placeholder="Username" required pattern=".*[A-Z].*">
+</label>
+
+
+<label for="whatsapp"> Whatsapp No
+<input type="number" name="whatsapp" id="whatsapp" required >
+</label>
+
+<label for="email">Email:
+<input type="email" name="email" id="email" required>
+</label>
+
+<label for="password">Password
+<input type="password" name="password" id="password" required pattern=".*[A-Z].*">
+</label>
+
+<label for="password1">Confirm Password
+<input type="password" name="password" id="password1" required pattern=".*[A-Z].*">
+</label>
+
+<label for="checkbox">
+  <input type="checkbox" name="checkbox" id="checkbox" required >Agree to terms and conditions  
+</label>
+</fieldset>
+
+<div class="button-container">
+<button type="submit" class="centered-button">Register</button></div>
+
+<p>Already have an account? <a href="#">Login</a> </p>
+</form>
+
+</div>
+     
+  </body>
+</html>
