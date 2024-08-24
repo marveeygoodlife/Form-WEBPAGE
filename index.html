@@ -9,57 +9,104 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="Form-card">
+    <div class="form-container">
       <h1>Create an account</h1>
-    
-<div class="form-container">
 
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Fill in the input fields</legend>
 
-<form action="/submit" method="post">
-    <fieldset>
-        <legend>Fill in the input fields</legend>
+          <label for="firstname">
+            First Name:
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First name"
+              required
+              title="Please enter atleast one uppercase letter"
+              pattern=".*[A-Z].*"
+            />
+          </label>
 
-<label for="firstname"> Firstname
-<input type="text" name="firstname" id="firstname" placeholder="First name" required title="Please enter atleast one uppercase letter" pattern=".*[A-Z].*">
-</label>
+          <label for="lastname">
+            Last Name:
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last name"
+              required
+              title="Please enter atleast one uppercase letter"
+              pattern=".*[A-Z].*"
+              pattern=".*[A-Z].*"
+            />
+          </label>
 
-<label for="lastname"> Lastname
-<input type="text" name="lastname" id="lastname" placeholder="Lastname" required title="Please enter atleast one uppercase letter" pattern=".*[A-Z].*" pattern=".*[A-Z].*">
-</label>
+          <label for="username">
+            User Name:
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="User name"
+              required
+              pattern=".*[A-Z].*"
+            />
+          </label>
 
-<label for="username"> Username
-<input type="text" name="username" id="username" placeholder="Username" required pattern=".*[A-Z].*">
-</label>
+          <label for="number">
+            Phone Number:
+            <input type="number" name="number" id="number" required />
+          </label>
 
+          <label for="email"
+            >Email:
+            <input type="email" name="email" id="email" required />
+          </label>
 
-<label for="whatsapp"> Whatsapp No
-<input type="number" name="whatsapp" id="whatsapp" required >
-</label>
+          <label for="password"
+            >Password:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+              required
+              pattern=".*[A-Z].*"
+            />
+          </label>
 
-<label for="email">Email:
-<input type="email" name="email" id="email" required>
-</label>
+          <label for="password1"
+            >Confirm Password:
+            <input
+              type="password"
+              name="password"
+              id="password1"
+              placeholder="Enter Password"
+              required
+              pattern=".*[A-Z].*"
+            />
+          </label>
 
-<label for="password">Password
-<input type="password" name="password" id="password" required pattern=".*[A-Z].*">
-</label>
+          <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" required />I
+            agree to terms and conditions
+          </label>
+        </fieldset>
 
-<label for="password1">Confirm Password
-<input type="password" name="password" id="password1" required pattern=".*[A-Z].*">
-</label>
+        <div class="button-container">
+          <button type="submit">Sign Up</button>
+        </div>
 
-<label for="checkbox">
-  <input type="checkbox" name="checkbox" id="checkbox" required >Agree to terms and conditions  
-</label>
-</fieldset>
-
-<div class="button-container">
-<button type="submit" class="centered-button">Register</button></div>
-
-<p>Already have an account? <a href="#">Login</a> </p>
-</form>
-
-</div>
-     
+        <p>
+          Already have an account?
+          <a
+            href="https://web.facebook.com/?stype=lo&deoia=1&jlou=Afdz2dnsN9O5lpFAp7Zx9F_ZeakcrL3qiB2ZsEMky1c4tBEoGAHIWs9RZA_nIumrfkWDcKcfWA2ZvVl-eQxrYcC65I8sY1K3l-s4eQwrKSW1yA&smuh=12704&lh=Ac8IspIbtRoVKPj2WUM"
+            >Login</a
+          >
+        </p>
+      </form>
+    </div>
   </body>
 </html>
