@@ -1,3 +1,37 @@
+/* Imported fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* custom root variables */
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-off-white: #F5F5F5;
+    --main-light-gray: #F0F0F0;
+    --menu-toggle-dark: #333;
+    --body-font-family: "Roboto", "Open Sans", "Lato", "Merriweather";
+    --header-font-family: "Oswald", "Montserrat", "Playfair";
+    --small-screen-font-size: 1rem;
+    --medium-screen-font-size: 1.125rem;
+    --large-screen-font-size: 1.25rem;
+    --small-H1-font-size: 24px;
+    --medium-H1-font-size: 28px;
+    --large-H1-font-size: 32px;
+    --small-H2-font-size: 21px;
+    --medium-H2-font-size: 25px;
+    --large-H2-font-size: 29px;
+    --small-text-font-size: 12px;
+    --medium-small-text-size: 14px;
+    --large-small-text-size: 16px;
+}
+
+
+
+
+/* Basic reset */
 *,
 *::before,
 *::after {
@@ -10,9 +44,10 @@ html {
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--body-font-family);
     background-color: snow;
     height: 100vh;
+    font-size: var(--small-screen-font-size);
     font-weight: bold;
     box-sizing: border-box;
 }
@@ -29,7 +64,7 @@ footer {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: var(--small-H1-font-size);
     text-align: center;
 }
 
@@ -122,7 +157,7 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: white;
@@ -137,6 +172,7 @@ p {
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
+    font-size: var(--small-text-font-size);
 }
 
 p a {
@@ -201,10 +237,12 @@ footer a:visited {
 
 /* Portrait and Landscape (medium screen)*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
-
+    body {
+        font-size: var(--medium-screen-font-size);
+    }
 
     h1 {
-        font-size: 3rem;
+        font-size: var(--medium-H1-font-size);
     }
 
     .form-container {
@@ -228,7 +266,7 @@ footer a:visited {
 
 
     p {
-        font-size: 1.5rem;
+        font-size: var(--medium-small-text-size);
     }
 
     div.anchor {
@@ -255,6 +293,7 @@ footer a:visited {
     button {
         width: 200px;
         height: 50px;
+        font-size: var(16px);
     }
 
     footer {
@@ -262,17 +301,24 @@ footer a:visited {
     }
 
     footer a:link {
-        font-size: 1cm;
+        font-size: 1remm;
         padding: 10px;
+    }
+
+    small {
+        font-size: var(--medium-small-text-size);
     }
 }
 
 /* LARGE SCREEN MEDIA QUERY*/
 @media only screen and (min-width: 1024px) {
 
+    body {
+        font-size: var(--large-screen-font-size);
+    }
 
     h1 {
-        font-size: 3rem;
+        font-size: var(--large-H1-font-size);
     }
 
     .form-container {
@@ -323,6 +369,7 @@ footer a:visited {
     }
 
     button {
+        font-size: 15px;
         width: 200px;
         height: 50px;
     }
@@ -337,7 +384,9 @@ footer a:visited {
         padding: 10px;
     }
 
-
+    small {
+        font-size: var(--large-small-text-size);
+    }
 
     footer a:hover {
         color: rgb(0, 255, 255);
