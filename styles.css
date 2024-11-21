@@ -80,7 +80,6 @@ body {
     font-weight: 900;
 }
 
-
 .lastdiv a {
     color: white;
     text-decoration: none;
@@ -165,6 +164,12 @@ p.column-gap:first-letter {
     align-items: center;
     flex-direction: column;
     place-items: center;
+    margin-top: 2rem;
+}
+
+
+div#aside .asideO {
+    margin-top: 20rem;
 }
 
 .form-content {
@@ -213,6 +218,12 @@ label {
     font-weight: bold;
 }
 
+div#footer-section {
+    background-color: var(--secondarytextColor);
+    color: white;
+    display: grid;
+}
+
 #errorMessage {
     color: red;
     font-size: 14px;
@@ -221,7 +232,7 @@ label {
 }
 
 #footer-section a:link {
-    color: var(--primarytextColor);
+    color: white;
     text-decoration: none;
     transition: color 0.2s ease, text-decoration 0.2s ease;
 }
@@ -238,7 +249,7 @@ label {
 }
 
 #footer-section a:visited {
-    color: var(--secondarytextColor);
+    color: var(--accent-color);
 
 }
 
@@ -251,7 +262,7 @@ fieldset {
 
 /* MEDIA QUERIES FOR TABLETS */
 
-@media (min-width:600px) and (max-width: 1023px) {
+@media screen and (min-width:600px) and (max-width: 1023px) {
 
     body {
         font-size: var(--tablet-fontSize);
@@ -278,6 +289,7 @@ fieldset {
 
     #aside p {
         font-size: 1.3rem;
+        padding: 5px;
     }
 
     p.column-gap {
@@ -310,6 +322,11 @@ fieldset {
         font-size: 1.3rem;
     }
 
+    div#footer-section {
+        flex-flow: row wrap;
+        display: flex;
+    }
+
     .form input {
 
         border: 2px solid #ddd;
@@ -328,7 +345,99 @@ fieldset {
 
     label {
         padding: 10px;
-        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* MEDIA QUERIES FOR TABLETS */
+
+@media screen and (min-width:1025) {
+
+    body {
+        font-size: var(--desktop-fontSize);
+    }
+
+    header#subHeader {
+        height: 100px;
+        margin-top: 3rem;
+    }
+
+    #subHeader .subparagraph {
+        font-size: 1.5rem;
+
+    }
+
+    h1#h1 {
+        font-size: 3rem;
+        /*         font-size: var(--desktop-H1);
+ */
+    }
+
+    #aside {
+        border-left: 3px solid black;
+        margin-left: 1rem;
+    }
+
+    #aside p {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    p.column-gap {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    div.form-section {
+        margin-top: 3rem;
+    }
+
+    .form-content {
+        box-shadow: 0 4px 8px rgba(209, 4, 4, 0.1);
+        margin: 0 auto;
+        max-width: 500px;
+        border-radius: 10px;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    #footer-section .footerP {
+        font-size: 1.6rem;
+    }
+
+    div#footer-section {
+        flex-flow: row;
+        display: flex;
+    }
+
+    .form input {
+
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-size: 1.4em;
+    }
+
+    .form button {
+
+        padding: 15px 20px;
+        font-size: 18px;
+        width: 350px;
+    }
+
+    label {
+        padding: 10px;
+        font-size: 1.5rem;
     }
 
 

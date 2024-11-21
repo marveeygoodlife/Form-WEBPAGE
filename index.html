@@ -72,6 +72,7 @@
                 id="emailAddress"
                 placeholder="youremail@gmail.com"
                 autocomplete="email"
+                required
               />
             </label>
 
@@ -83,11 +84,11 @@
                 id="inputPassword"
                 placeholder="Create a Password"
                 required
+                pattern=".*[A-Z].*"
                 autocomplete="new-password"
                 title="Please enter at-least one Uppercase letter, number and special characters"
               />
             </label>
-            <!--pattern=".*[A-Z].*"-->
 
             <label for="verifyPassword"
               >Confirm Password:
@@ -99,6 +100,7 @@
                 required
                 title="Please enter at-least one Uppercase letter, number and special characters"
                 autocomplete="new-password"
+                pattern=".*[A-Z].*"
               />
             </label>
             <div id="errorMessage">
@@ -107,22 +109,23 @@
           </fieldset>
           <button type="submit">Sign Up</button>
         </form>
-        <div id="footer-section">
-          <p class="footerP">
-            &nbsp;By signing up, you agree to our
-            <a href="#">Terms of service</a> and
-            <a href="#">Privacy policy</a>
-          </p>
-          <p class="footerP">
-            Already have an account? <a href="login.html">Log in</a>
-          </p>
-          <a href="profile-update.html">Update profile</a>
-        </div>
-        <div style="position: relative" class="lastdiv">
-          <a href="#" class="btn">Top &#128640;</a>
-        </div>
       </div>
     </main>
+    <div id="footer-section">
+      <p class="footerP">
+        &nbsp;By signing up, you agree to our
+        <a href="#">Terms of service</a> and
+        <a href="#">Privacy policy</a>
+      </p>
+      <p class="footerP">
+        &nbsp; Already have an account? <a href="login.html">Log in</a>
+      </p>
+      <!--       <a href="profile-update.html">Update profile</a>
+ -->
+    </div>
+    <div style="position: relative" class="lastdiv">
+      <a href="#" class="btn">Top &#128640;</a>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
