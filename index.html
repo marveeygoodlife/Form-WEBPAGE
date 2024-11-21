@@ -5,152 +5,127 @@
     <meta name="description" content="this is a project" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>Sign up | Social Media</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header><h1>FRIENDS-HUB</h1></header>
-    <main>
-      <div class="form-container">
-        <form action="https:httpbin.org/post" method="post">
+    <header id="mainHeader" class="mainHeader">
+      <h1 class="paragraph" id="h1">Join the conversation! &#128522;</h1>
+    </header>
+    <header id="subHeader">
+      <p class="subparagraph">
+        Sign up today and start sharing, connecting, and discovering amazing
+        content with people just like you.&#x1F60D;
+      </p>
+    </header>
+    <main
+      id="main-container
+    "
+    >
+      <div id="aside">
+        <p class="column-gap">
+          &nbsp;Unlock all the features – from personalized posts to making new
+          friends, your journey begins here.&#127775; <br />
+          <br />
+          &nbsp; We promise a fun, exciting, and safe space to express yourself.
+          All you need to do is fill in the form and you’re in! &#128077;
+        </p>
+      </div>
+      <div class="form-section" style="position: relative">
+        <form
+          action="https:httpbin.org/post"
+          method="post"
+          id="signUpForm"
+          class="form"
+        >
           <fieldset>
-            <p>Please complete the form to create an account.</p>
-            <label for="firstname">
-              First Name:
+            <label for="fullName">
+              Full Name:
               <input
                 type="text"
-                name="firstname"
-                id="firstname"
-                placeholder="First name"
-                required
-                title="Please enter atleast one uppercase letter"
+                name="full_name"
+                id="fullName"
+                placeholder="Enter your full name"
+                title="Please enter your full name"
                 pattern=".*[A-Z].*"
-                autocomplete="given-name"
+                autocomplete="name"
                 autofocus
               />
             </label>
 
-            <label for="lastname">
-              Last Name:
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                placeholder="Last name"
-                required
-                title="Please enter atleast one uppercase letter"
-                pattern=".*[A-Z].*"
-                pattern=".*[A-Z].*"
-                autocomplete="family-name"
-              />
-            </label>
-
-            <label for="username">
+            <label for="userName">
               User Name:
               <input
                 type="text"
                 name="username"
-                id="username"
-                placeholder="User name"
-                required
-                pattern=".*[A-Z].*"
+                id="userName"
+                placeholder="Choose your user name"
                 autocomplete="username"
               />
             </label>
 
-            <label for="number">
-              Phone Number:
-              <input type="number" name="number" id="number" required />
-            </label>
-
-            <label for="email"
+            <label for="emailAddress"
               >Email:
               <input
                 type="email"
                 name="email"
-                id="email"
-                required
+                id="emailAddress"
+                placeholder="youremail@gmail.com"
                 autocomplete="email"
+                required
               />
             </label>
 
-            <label for="password"
+            <label for="inputPassword"
               >Password:
               <input
                 type="password"
                 name="password"
-                id="password"
-                placeholder="Enter Password"
+                id="inputPassword"
+                placeholder="Create a Password"
                 required
                 pattern=".*[A-Z].*"
                 autocomplete="new-password"
+                title="Please enter at-least one Uppercase letter, number and special characters"
               />
             </label>
 
-            <label for="password1"
+            <label for="verifyPassword"
               >Confirm Password:
               <input
                 type="password"
-                name="password"
-                id="password1"
-                placeholder="Enter Password"
+                name="enter_password"
+                id="verifyPassword"
+                placeholder="Confirm Password"
                 required
-                pattern=".*[A-Z].*"
+                title="Please enter at-least one Uppercase letter, number and special characters"
                 autocomplete="new-password"
+                pattern=".*[A-Z].*"
               />
             </label>
-
-            <label for="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" required />By
-              signing up you agree that you have read and consent to our user
-              <a href="#" class="privacy" target="_blank">privacy policy </a>
-            </label>
+            <div id="errorMessage">
+              <p>Passwords do not match. Please re-enter your passwords.</p>
+            </div>
           </fieldset>
-          <div class="button-container">
-            <button type="submit">Sign Up</button>
-          </div>
-
-          <p>
-            Already have an account?
-            <a
-              href="https://web.facebook.com/?stype=lo&deoia=1&jlou=Afdz2dnsN9O5lpFAp7Zx9F_ZeakcrL3qiB2ZsEMky1c4tBEoGAHIWs9RZA_nIumrfkWDcKcfWA2ZvVl-eQxrYcC65I8sY1K3l-s4eQwrKSW1yA&smuh=12704&lh=Ac8IspIbtRoVKPj2WUM"
-              target="_blank"
-              >Login</a
-            >
-          </p>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
     </main>
-    <footer>
-      <div>
-        <section class="contact-section">
-          <h2>CONTACT ME</h2>
-
-          <div class="anchor">
-            <a href="mailto:marveey8027@gmail.com" target="_blank">Gmail</a>
-            <a
-              href="ttps://x.com/livingstone_z_"
-              target="_blank"
-              class="Twitter"
-              >Twitter (X)</a
-            >
-            <a
-              href="https://www.linkedin.com/in/marvellous-ediagbonya-064b50147/"
-              target="_blank"
-              >Linkedin</a
-            >
-            <a
-              href="https://github.com/marveeygoodlife?tab=repositories"
-              target="_blank"
-              >Github</a
-            >
-          </div>
-        </section>
-      </div>
-
-      <small class="small" style="margin-bottom: 1rem; display: block"
-        >&copy;Copyright 2024, Marveey Goodlife</small
-      >
-    </footer>
+    <div id="footer-section">
+      <p class="footerP">
+        &nbsp;By signing up, you agree to our
+        <a href="#">Terms of service</a> and
+        <a href="#">Privacy policy</a>
+      </p>
+      <p class="footerP">
+        &nbsp; Already have an account? <a href="login.html">Log in</a>
+      </p>
+      <!--       <a href="profile-update.html">Update profile</a>
+ -->
+    </div>
+    <div style="position: relative" class="lastdiv">
+      <a href="#" class="btn">Top &#128640;</a>
+    </div>
+    <script src="scripts.js"></script>
   </body>
 </html>

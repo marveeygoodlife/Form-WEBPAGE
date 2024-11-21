@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Marveey" />
+    <meta name="description" content="this is a project" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Social Media</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="mainHeader">
+      <h1 class="paragraph">Welcome Back! let's get you in!</h1>
+    </header>
+    <main
+      id="main-container
+    "
+    >
+
+      <div id="aside" class="asideO">
+        <p  class="column-gap">
+          Login to reconnect with your friends and dive into the latest updates.
+          Your community, your content. Don’t miss out on the latest updates,
+          comments, and conversations. Enter your details below and let's
+          continue the journey!
+        </p>
+      </div>
+      <div class="form-section">
+        <form
+          action="https:httpbin.org/post"
+          method="post"
+          class="form"
+          id="loginForm"
+        >
+          <fieldset style="margin-top: 1rem">
+            <label for="fullName">
+              Username or email:
+              <input
+                type="text"
+                name="full_name"
+                id="fullName"
+                placeholder="Enter your username or password"
+                required
+                title="Please enter your full name"
+                pattern=".*[A-Z].*"
+                autocomplete="name"
+                autofocus
+              />
+            </label>
+
+            <label for="newPassword"
+              >Password:
+              <input
+                type="password"
+                name="password"
+                id="newPassword"
+                placeholder="Enter password"
+                required
+                pattern=".*[A-Z].*"
+                autocomplete="new-password"
+                title="Please enter at-least one Uppercase letter, number and special characters"
+              />
+            </label>
+            <div id="errorMessage" style="color: red; display: none">
+              Passwords do not match. Please re-enter your passwords.
+            </div>
+          </fieldset>
+          <button type="submit">Log in</button>
+        </form>
+      
+      </div
+      
+    </main>
+    <div id="footer-section">
+      <p class="footerP">
+     &nbsp;   Forgot your password? <a href="#">Reset it here.</a>
+      </p>
+
+      <p class="footerP">
+      &nbsp;  New to markopolo ?<a href="index.html">Sign Up now </a> and start
+        exploring!
+      </p>
+    </div>
+  </body>
+</html>
