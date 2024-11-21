@@ -1,0 +1,335 @@
+/* imported font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* basic reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --backgroundColor: #F9F9F9;
+    /* very light gray */
+    --primarytextColor: #212529;
+    /* darkgray/black */
+    --secondarytextColor: #6C757D
+        /* muted gray */
+    ;
+    --accentColor: #26A69A;
+    /* teal */
+    --accent-color: #FFC107;
+    /* yellow */
+    --general-fontStyle: Tahoma, "Roboto", "Open Sans", "Lato", "Merriweather";
+    --headingFont: "Oswald", "Montserrat", "Playfair";
+    --mobile-fontSize: 1rem;
+    --tablet-fontSize: 1.125rem;
+    --desktop-fontSize: 1.25rem;
+    --mobile-H1: 24px;
+    --tablet-H1: 28px;
+    --desktop-H1: 32px;
+    --mobile-H2: 21px;
+    --tablet-H2: 25px;
+    --desktop-H2: 29px;
+    --small-text: 12px;
+    --medium-small-text: 14px;
+    --large-small-text: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* STYLE FOR SMALL SCREENS */
+body {
+    position: relative;
+    font-size: var(--mobile-fontSize);
+    background-color: var(--backgroundColor);
+    color: var(--primarytextColor);
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    font-family: var(--general-fontStyle);
+}
+
+.mainHeader {
+    border-bottom: 2px solid gray;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--primarytextColor);
+}
+
+/* scroll top style */
+.btn {
+    z-index: 1000000;
+    max-width: 100vw;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: gray;
+    max-height: 20px;
+    font-weight: 900;
+}
+
+
+.lastdiv a {
+    color: white;
+    text-decoration: none;
+}
+
+.lastdiv a:visited {
+    color: snow;
+}
+
+.lastdiv a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.lastdiv a:active {
+    color: var(--accent-color);
+}
+
+/* scroll top style end here */
+#subHeader {
+    position: sticky;
+    width: 100vw;
+    z-index: -100;
+    margin-top: 2rem;
+    padding: 10px;
+    background-color: var(--primarytextColor);
+}
+
+
+
+h1 {
+    width: fit-content;
+    font-size: var(--mobile-H1);
+    font-family: var(--headingFont);
+    padding-left: 10px;
+}
+
+/* style for paragraph */
+#subHeader .subparagraph {
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+
+}
+
+header .paragraph {
+    color: white;
+    font-size: 1.2rem;
+}
+
+p {
+    transition: color 0.3s ease;
+    color: var(--primarytextColor);
+    font-size: var(--small-text);
+    display: block;
+    font-size: 1rem;
+    margin: 1em 0;
+    padding: 0;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: left;
+}
+
+p:hover {
+    color: black;
+    /* Slightly darker on hover */
+}
+
+p.column-gap:first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+}
+
+/* paragraph style end */
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+.form-content {
+    box-shadow: 0 4px 8px rgba(209, 4, 4, 0.1);
+    margin: 0 auto;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+
+
+.form input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: var(--small-text);
+}
+
+.form button {
+    display: block;
+    border: none;
+    padding: 10px 13px;
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+    background-color: var(--primarytextColor);
+    margin: 10px auto 0;
+    color: #F9F9F9;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: var(--secondarytextColor);
+}
+
+label {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    padding: 10px;
+    display: none;
+}
+
+#footer-section a:link {
+    color: var(--primarytextColor);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+#footer-section a:active {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#footer-section a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer-section a:visited {
+    color: var(--secondarytextColor);
+
+}
+
+fieldset {
+    border: 1px solid rgba(222, 26, 26, 0.207);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+/* MEDIA QUERIES FOR TABLETS */
+
+@media (min-width:600px) and (max-width: 1023px) {
+
+    body {
+        font-size: var(--tablet-fontSize);
+    }
+
+    header#subHeader {
+        height: 100px;
+        margin-top: 3rem;
+    }
+
+    #subHeader .subparagraph {
+        font-size: 1.3rem;
+
+    }
+
+    h1#h1 {
+        font-size: var(--tablet-H1);
+    }
+
+    #aside {
+        border-left: 3px solid black;
+        margin-left: 1rem;
+    }
+
+    #aside p {
+        font-size: 1.3rem;
+    }
+
+    p.column-gap {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    div.form-section {
+        margin-top: 3rem;
+    }
+
+    .form-content {
+        box-shadow: 0 4px 8px rgba(209, 4, 4, 0.1);
+        margin: 0 auto;
+        max-width: 350px;
+        border-radius: 10px;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    #footer-section .footerP {
+        font-size: 1.3rem;
+    }
+
+    .form input {
+
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-size: 1.1em;
+    }
+
+    .form button {
+
+        padding: 15px 20px;
+        font-size: 18px;
+        width: 200px;
+    }
+
+    label {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+
+}
