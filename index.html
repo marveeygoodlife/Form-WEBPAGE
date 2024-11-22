@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta name="author" content="Marveey" />
-    <meta name="description" content="this is a project" />
+    <meta name="author" content="Marveey Goodlife" />
+    <meta
+      name="description"
+      content="this is markopolo social-media login signup page. user can sign-up to make friends and connect with people around the world"
+    />
     <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="dating, friends, social-media, markopolo, meet-new-friends, login, signup, make-friends"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up | Social Media</title>
+    <title>Sign up | Markopolo | Connect and make new friends</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
   </head>
   <body>
     <header id="mainHeader" class="mainHeader">
@@ -18,100 +26,119 @@
         content with people just like you.&#x1F60D;
       </p>
     </header>
-    <main
-      id="main-container
-    "
-    >
-      <div id="aside">
-        <p class="column-gap">
-          &nbsp;Unlock all the features – from personalized posts to making new
-          friends, your journey begins here.&#127775; <br />
-          <br />
-          &nbsp; We promise a fun, exciting, and safe space to express yourself.
-          All you need to do is fill in the form and you’re in! &#128077;
-        </p>
-      </div>
-      <div class="form-section" style="position: relative">
-        <form
-          action="https:httpbin.org/post"
-          method="post"
-          id="signUpForm"
-          class="form"
-        >
-          <fieldset>
-            <label for="fullName">
-              Full Name:
-              <input
-                type="text"
-                name="full_name"
-                id="fullName"
-                placeholder="Enter your full name"
-                title="Please enter your full name"
-                pattern=".*[A-Z].*"
-                autocomplete="name"
-                autofocus
-              />
-            </label>
+    <main class="mainContainer">
+      <div class="gridContainer">
+        <div class="aside">
+          <p class="column-gap">
+            &nbsp;Unlock all the features – from personalized posts to making
+            new friends, your journey begins here.&#127775; <br />
+            <br />
+            &nbsp; We promise a fun, exciting, and safe space to express
+            yourself. All you need to do is fill in the form and you’re in!
+            &#128077;
+          </p>
+        </div>
+        <!-- FORM STYLE -->
+        <div class="formSection" style="position: relative">
+          <form
+            action="https://httpbin.org/post"
+            method="post"
+            id="signUpForm"
+            class="form"
+          >
+            <fieldset>
+              <div class="inform">
+                <label for="fullName">
+                  Full Name:
+                  <input
+                    type="text"
+                    name="full_name"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    title="Please enter your full name"
+                    pattern=".*[A-Z].*"
+                    autocomplete="name"
+                    autofocus
+                  />
+                </label>
 
-            <label for="userName">
-              User Name:
-              <input
-                type="text"
-                name="username"
-                id="userName"
-                placeholder="Choose your user name"
-                autocomplete="username"
-              />
-            </label>
+                <label for="userName">
+                  User Name:
+                  <input
+                    type="text"
+                    name="username"
+                    id="userName"
+                    placeholder="Choose your user name"
+                    autocomplete="username"
+                  />
+                </label>
 
-            <label for="emailAddress"
-              >Email:
-              <input
-                type="email"
-                name="email"
-                id="emailAddress"
-                placeholder="youremail@gmail.com"
-                autocomplete="email"
-                required
-              />
-            </label>
+                <label for="emailAddress"
+                  >Email Address:
+                  <input
+                    type="email"
+                    name="email"
+                    id="emailAddress"
+                    placeholder="youremail@gmail.com"
+                    autocomplete="email"
+                  />
+                </label>
+                <label for="country">
+                  <select name="selectCountry" id="country">
+                    <option value="">Select country</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="australia">Australia</option>
+                    <option value="america">United states of America</option>
+                    <option value="russia">Russia</option>
+                    <option value="austria">Austria</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="london">London</option>
+                    <option value="china">China</option>
+                    <option value="korea">Korea</option>
+                  </select>
+                  <br />
+                  <br />
+                </label>
+                <label for="inputPassword"
+                  >Password:
+                  <input
+                    type="password"
+                    name="password"
+                    id="inputPassword"
+                    placeholder="Create a Password"
+                    required
+                    pattern=".*[A-Z].*"
+                    autocomplete="new-password"
+                    title="Please enter at-least one Uppercase letter, number and special characters"
+                  />
+                </label>
 
-            <label for="inputPassword"
-              >Password:
-              <input
-                type="password"
-                name="password"
-                id="inputPassword"
-                placeholder="Create a Password"
-                required
-                pattern=".*[A-Z].*"
-                autocomplete="new-password"
-                title="Please enter at-least one Uppercase letter, number and special characters"
-              />
-            </label>
-
-            <label for="verifyPassword"
-              >Confirm Password:
-              <input
-                type="password"
-                name="enter_password"
-                id="verifyPassword"
-                placeholder="Confirm Password"
-                required
-                title="Please enter at-least one Uppercase letter, number and special characters"
-                autocomplete="new-password"
-                pattern=".*[A-Z].*"
-              />
-            </label>
-            <div id="errorMessage">
-              <p>Passwords do not match. Please re-enter your passwords.</p>
-            </div>
-          </fieldset>
-          <button type="submit">Sign Up</button>
-        </form>
+                <label for="verifyPassword"
+                  >Confirm Password:
+                  <input
+                    type="password"
+                    name="enter_password"
+                    id="verifyPassword"
+                    placeholder="Confirm Password"
+                    required
+                    title="Please enter at-least one Uppercase letter, number and special characters"
+                    autocomplete="new-password"
+                    pattern=".*[A-Z].*"
+                  />
+                </label>
+                <div id="errorMessage">
+                  <p>Passwords do not match. Please re-enter your passwords.</p>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
       </div>
     </main>
-    <div id="footer-section">
+    <div class="footerSection">
       <p class="footerP">
         &nbsp;By signing up, you agree to our
         <a href="#">Terms of service</a> and
@@ -123,7 +150,7 @@
       <!--       <a href="profile-update.html">Update profile</a>
  -->
     </div>
-    <div style="position: relative" class="lastdiv">
+    <div style="position: relative" class="scrollTop">
       <a href="#" class="btn">Top &#128640;</a>
     </div>
     <script src="scripts.js"></script>
