@@ -279,6 +279,46 @@ div.footerSection {
 /* scroll top style end here */
 /* FOOTER STYLE END */
 
+/* modalstyle to display password */
+#modal {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-image: radial-gradient(var(--primarytextColor), var(--accent-color));
+    background-color: var(--accent-color);
+    font-weight: bold;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: hidden;
+    height: auto;
+}
+
+#modal button {
+    width: 100px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+#modal button:hover {
+    background-color: var(--accentColor);
+    color: black;
+}
+
+#modalContent {
+    overflow: hidden;
+    color: white;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+/* modalstyle to display password end */
 /* MEDIA QUERIES FOR TABLETS */
 
 @media screen and (min-width:600px) and (max-width: 1023px) {

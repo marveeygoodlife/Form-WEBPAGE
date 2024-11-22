@@ -31,12 +31,12 @@
             id="loginForm"
           >
             <fieldset style="margin-top: 1rem">
-              <label for="loginName">
+              <label for="loginname">
                 Username or email:
                 <input
                   type="text"
                   name="full_name"
-                  id="loginName"
+                  id="loginname"
                   placeholder="Enter your username or password"
                   required
                   title="Please enter your full name"
@@ -46,12 +46,12 @@
                 />
               </label>
 
-              <label for="loginPassword"
+              <label for="loginpassword"
                 >Password:
                 <input
                   type="password"
                   name="password"
-                  id="loginPassword"
+                  id="loginpassword"
                   placeholder="Enter password"
                   required
                   pattern=".*[A-Z].*"
@@ -62,11 +62,21 @@
                 Passwords do not match. Please re-enter your passwords.
               </div>
             </fieldset>
-            <button type="submit" id="button">Log in</button>
+            <button type="button" id="button">Log in</button>
           </form>
         </div>
       </div>
     </main>
+    <!-- Modal Structure -->
+    <div id="modal">
+      <p id="modalContent"></p>
+      <button
+        onclick="document.getElementById('modal').style.display = 'none';"
+      >
+        Close
+      </button>
+    </div>
+
     <div class="footerSection">
       <p class="footerP">
         &nbsp; Forgot your password? <a href="#">Reset it here.</a>

@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded",()=>{
     // variable to hold the element ID's
-     const userName = document.getElementById("loginName");
-    const userPassword = document.getElementById("loginPassword");
+const loginName = document.getElementById("loginname");
+const loginPassword = document.getElementById("loginpassword");
 const  button =document.getElementById("button");
- function showInput(value){
-    console.log(value);
- }
-// add event listener to the button
-button.addEventListener("click", () =>{ 
-    showInput(userName.value)
-})
+const displayOutput = document.getElementById("output");
+const modal = document.getElementById('modal');
+const modalContent = document.getElementById('modalContent');
+
+// add event listener to the button to execute the function when the button is  clicked. 
+button.addEventListener("click", () => { 
+const userName = loginName.value;
+const passWord = loginPassword.value;
+  // Display in the modal
+  modalContent.textContent = `Username: ${userName}\nPassword: ${passWord}`;
+  modal.style.display = 'block'; // Show modal
+//show user details on the page
+ })
 // function to get the user input
 
  })
